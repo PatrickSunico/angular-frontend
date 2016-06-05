@@ -5,6 +5,7 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
+    imagemin = require('gulp-imagemin'),
     sass = require('gulp-sass');
 
 //Globs
@@ -12,11 +13,13 @@ var gulp = require('gulp'),
     var publicPath = {
       spa: './public/index.html',
       scss: './public/scss/**/*.scss*',
-      js: './public/js/**/*.js*'
+      js: './public/js/**/*.js*',
+      img: 'public/images/raw/*'
     };
 
     var output = {
-      public: 'public/'
+      public: 'public/',
+      img : 'public/images/compressed/'
     };
 
 // ======================================================
@@ -35,6 +38,12 @@ var gulp = require('gulp'),
   gulp.task('minifyJS', function(){
     return gulp.src(publicPath.js)
           .pipe(uglify())
+  });
+
+  gulp.task('image-min',function(){
+    return gulp.src(publicPath.img)
+          .pipe(imagemin())
+          .pipe(gulp.dest(output.img));
   });
 
   // browser-sync reload
@@ -62,4 +71,4 @@ var gulp = require('gulp'),
 
 
 // Defaults
-gulp.task('default', ['browser-sync', 'sass']);
+gulp.task('default', ['sass' ,'image-min','browser-sync']);
