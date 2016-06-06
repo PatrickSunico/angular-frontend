@@ -25,8 +25,4 @@ app.controller('cribsController', ['$scope', '$http', 'dataService', function($s
 
     // console.log(deferred);
 
-    $scope.sayHello = function() {
-      console.log('Hello');
-    }
-
 }]);
