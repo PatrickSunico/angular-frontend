@@ -1,7 +1,7 @@
 app.service('dataService', ['$http','$q', function($http, $q){
 
   function getData(){
-      return $http.get('/data').then(function(data){
+      return $http.get('./js/data/houses.json').then(function(data){
           return data;
       });
   }

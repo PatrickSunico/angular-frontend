@@ -3,6 +3,11 @@ app.controller('cribsController', ['$scope', '$http', 'dataService', function($s
 
     $scope.cribs;
 
+    $scope.priceInfo = {
+      min: 0,
+      max: 100000
+    }
+
 
     // Normal injected Service from services.js
     // Hey run this function but come back so i can do the code inside here
@@ -24,5 +29,4 @@ app.controller('cribsController', ['$scope', '$http', 'dataService', function($s
     // var deferred = $q.defer();
 
     // console.log(deferred);
-
 }]);

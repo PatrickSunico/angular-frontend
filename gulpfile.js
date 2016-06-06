@@ -71,4 +71,4 @@ gulp.task('watch', function(){
 
 
 // Defaults
-gulp.task('default', ['sass', 'watch']);
+gulp.task('default', ['browser-sync','sass', 'watch']);
