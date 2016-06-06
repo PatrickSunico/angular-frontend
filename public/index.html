@@ -13,11 +13,9 @@
 
     <nav class="navbar-fixed-top navbar navbar-light bg-faded">
       <div class="nav navbar-nav">
-        <a class="navbar-brand" href="#">Real Estate</a>
+        <a class="navbar-brand" href="#">BedSpacr</a>
         <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#">Features</a>
-        <a class="nav-item nav-link" href="#">Pricing</a>
-        <a class="nav-item nav-link" href="#">About</a>
+
       </div>
     </nav>
 
@@ -32,8 +30,18 @@
           <h3 class="card-title">{{crib.address}}</h3>
             <p><strong>Type: </strong>{{crib.type}}</p>
             <p><strong>Price: </strong>{{crib.price | currency : "USD $" : 0}}</p>
-            <p class="card-text"><strong>Description: </strong>{{crib.description}}</p>
+            <p><strong>Details: </strong></p>
         </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><strong>Bedrooms:</strong>{{crib.details.bedrooms}}</li>
+          <li class="list-group-item"><strong>Bathrooms</strong>{{crib.details.bathrooms}}</li>
+          <li class="list-group-item"><strong>Area Code:</strong>{{crib.details.area}}</li>
+        </ul>
+
+        <div class="card-block">
+          <p class="card-text"><strong>Description: </strong>{{crib.description}}</p>
+        </div>
+
       </div>
     </div>
 </div>

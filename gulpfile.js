@@ -60,15 +60,15 @@ var gulp = require('gulp'),
       gulp.watch(publicPath.js).on('change', browserSync.reload);
   });
 
-// gulp.task('watch', function(){
-//   gulp.watch(publicPath.spa).on('change', browserSync.reload);
-//   gulp.watch(publicPath.scss,['sass']).on('change', browserSync.reload);
-//   gulp.watch(publicPath.js).on('change', browserSync.reload);
-// });
+gulp.task('watch', function(){
+  gulp.watch(publicPath.spa).on('change', browserSync.reload);
+  gulp.watch(publicPath.scss,['sass']).on('change', browserSync.reload);
+  gulp.watch(publicPath.js).on('change', browserSync.reload);
+});
 
 // gulp.task('default',['sass','watch']);
 // ======================================================
 
 
 // Defaults
-gulp.task('default', ['sass' ,'image-min','browser-sync']);
+gulp.task('default', ['sass', 'watch']);
