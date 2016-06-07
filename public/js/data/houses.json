@@ -9,7 +9,8 @@
     "bathrooms": 8,
     "area": 19010
   },
-  "image": "house-1"
+  "image": "house-1",
+  "link": "link"
 }, {
   "id": 2,
   "type": "Apartment",
@@ -21,7 +22,8 @@
     "bathrooms": 8,
     "area": 19010
   },
-  "image": "house-2"
+  "image": "house-2",
+  "link": ""
 }, {
   "id": 3,
   "type": "House",
@@ -33,7 +35,8 @@
     "bathrooms": 8,
     "area": 19010
   },
-  "image": "house-3"
+  "image": "house-3",
+  "link": ""
 }, {
   "id": 4,
   "type": "Duplex",
@@ -45,7 +48,8 @@
     "bathrooms": 8,
     "area": 19010
   },
-  "image": "house-4"
+  "image": "house-4",
+  "link": ""
 }, {
   "id": 5,
   "type": "House",
@@ -57,7 +61,8 @@
     "bathrooms": 8,
     "area": 19010
   },
-  "image": "house-5"
+  "image": "house-5",
+  "link": ""
 }, {
   "id": 6,
   "type": "Condo",
@@ -69,7 +74,8 @@
     "bathrooms": 8,
     "area": 19010
   },
-  "image": "house-6"
+  "image": "house-6",
+  "link": ""
 }, {
   "id": 7,
   "type": "Apartment",
@@ -81,7 +87,8 @@
     "bathrooms": 8,
     "area": 19010
   },
-  "image": "house-7"
+  "image": "house-7",
+  "link": ""
 }, {
   "id": 8,
   "type": "Apartment",
@@ -93,7 +100,8 @@
     "bathrooms": 8,
     "area": 19010
   },
-  "image": "house-8"
+  "image": "house-8",
+  "link": ""
 }, {
   "id": 9,
   "type": "Condo",
@@ -105,7 +113,8 @@
     "bathrooms": 8,
     "area": 19010
   },
-  "image": "house-9"
+  "image": "house-9",
+  "link": ""
 }, {
   "id": 10,
   "type": "Duplex",
@@ -117,5 +126,6 @@
     "bathrooms": 8,
     "area": 19010
   },
-  "image": "house-10"
+  "image": "house-10",
+  "link": ""
 }]

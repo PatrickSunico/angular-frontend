@@ -6,7 +6,22 @@ app.controller('cribsController', ['$scope', '$http', 'dataService', function($s
     $scope.priceInfo = {
       min: 0,
       max: 100000
-    }
+    };
+
+    // temp store for new post
+    $scope.newListing = {
+
+    };
+
+
+    // ng-click call function
+    $scope.postListing = function(newListing) {
+      // push value of newListing to $scope.cribs
+      $scope.cribs.push(newListing);
+      console.log(newListing.price);
+      console.log($scope.cribs);
+    };
+
 
 
     // Normal injected Service from services.js
