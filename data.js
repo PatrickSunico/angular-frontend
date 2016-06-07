@@ -10,7 +10,7 @@ var data = [{
     "area": 19010
   },
   "image": "house-1",
-  "link": "link"
+  "link": ""
 }, {
   "id": 2,
   "type": "Apartment",

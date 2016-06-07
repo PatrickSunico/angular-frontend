@@ -132,7 +132,7 @@
                     <div class="row-2 col-sm-4">
                         <div class="input-group">
                             <span class="input-group-addon">Image Link</span>
-                            <input type="text" placeholder="Image Link" class="form-control" ng-model="newListing.imgstr">
+                            <input type="text" placeholder="Image Link" class="form-control" ng-model="newListing.link">
                         </div>
                     </div>
                 </div>
@@ -167,8 +167,13 @@
     <div class="container">
         <div class="card-columns">
             <div class="card" ng-repeat="crib in cribs | currencyFilter : priceInfo">
-                <img class="card-img-top" ng-src="images/compressed/{{crib.image}}.jpg" alt="">
-                <img src="{{crib.imgstr}}" alt="">
+
+              <!-- local Store -->
+              <img ng-hide="!crib.image"ng-src="images/compressed/{{crib.image}}.jpg">
+
+              <!-- link -->
+              <img ng-hide="!crib.link" src="{{crib.link}}" alt="">
+
                 <div class="card-block">
                     <h3 class="card-title">{{crib.address}}</h3>
                     <p><strong>Type: </strong>{{crib.type}}</p>
