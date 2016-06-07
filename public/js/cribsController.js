@@ -16,7 +16,11 @@ app.controller('cribsController', ['$scope', '$http', 'dataService', function($s
     // });
 
     dataService.getData().then(function(data){
+      console.log("Status: " + data.status);
       $scope.cribs = data.data;
+
+    }).catch(function(err) {
+      console.error(err);
     });
 
 

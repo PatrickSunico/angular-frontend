@@ -1,10 +1,16 @@
 app.service('dataService', ['$http','$q', function($http, $q){
 
   function getData(){
-      return $http.get('./js/data/houses.json').then(function(data){
+      return $http.get('/data').then(function(data){
+          console.log(status);
           return data;
+      }).catch(function(err) {
+        console.error('404 not found');
       });
   }
+
+  // $http.get('/someUrl', config).then(successCallback, errorCallback);
+
 
   return {
     getData: getData
