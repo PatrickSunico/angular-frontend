@@ -19,6 +19,7 @@ app.controller('cribsController', ['$scope', '$http', 'dataService', function($s
         // console.log(newListing.image);
         $scope.cribs.push(newListing);
         console.log($scope.cribs);
+        $scope.newListing = {};
     };
 
     // Normal injected Service from services.js
@@ -34,8 +35,6 @@ app.controller('cribsController', ['$scope', '$http', 'dataService', function($s
     }).catch(function(err) {
         console.error(err);
     });
-
-
 
 
     // Promises Alternative DO NOT DELETE
